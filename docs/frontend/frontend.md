@@ -345,3 +345,9 @@ codigo/
 
 !!! info "Cómo ejecutar el proyecto"
     Descarga los tres archivos y conserva las rutas indicadas en el HTML: `assets/css/style.css` y `assets/js/script.js`. También puedes abrir el [`index.html`](codigo/index.html) incluido en esta documentación para consultar el código completo.
+
+## Librerías web
+
+Las librerías web complementan y facilitan la construcción de frontend
+
+[Abrir librerías web ↗](https://sebastianaguirre-lab.github.io/librerias-web/){ .md-button .md-button--primary target="_blank" rel="noopener" }
