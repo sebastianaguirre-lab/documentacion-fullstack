@@ -14,7 +14,7 @@ hide:
   </div>
 </section>
 
-<div class="learning-grid" markdown>
+<div class="learning-grid">
 
 <a class="learning-card learning-card--active" href="python/python-basicos/">
   <span class="learning-card__number">01</span>
