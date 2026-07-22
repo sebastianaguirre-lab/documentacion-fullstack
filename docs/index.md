@@ -27,7 +27,7 @@ hide:
   <span class="learning-card__number">02</span>
   <h2>Frontend</h2>
   <p>HTML, CSS, Bootstrap y JavaScript para construir interfaces claras y responsive.</p>
-  <strong>Próximamente</strong>
+  <strong>Explorar la guía →</strong>
 </div>
 
 <div class="learning-card">
@@ -43,19 +43,6 @@ hide:
   <p>Ejercicios integradores para convertir conceptos aislados en soluciones completas.</p>
   <strong>En preparación</strong>
 </div>
-
-</div>
-
-## Qué encontrarás
-
-<div class="feature-row" markdown>
-
-- :material-code-tags: **Ejemplos ejecutables**  
-  Código breve acompañado por su salida esperada.
-- :material-map-marker-path: **Recorrido ordenado**  
-  Desde los primeros fundamentos hasta conceptos de desarrollo web.
-- :material-book-open-page-variant: **Consulta rápida**  
-  Buscador, índice por página y navegación pensada para volver cuando lo necesites.
 
 </div>
 
