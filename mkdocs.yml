@@ -1,0 +1,78 @@
+site_name: Fullstack Python Interactivo
+site_description: Guía práctica de programación y desarrollo web.
+site_author: Sebastián Aguirre
+site_url: https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/
+repo_url: https://github.com/sebastianaguirre-lab/fullstack-python-interactivo
+repo_name: sebastianaguirre-lab/fullstack-python-interactivo
+
+theme:
+  name: material
+  language: es
+  custom_dir: docs/overrides
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: cyan
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: fontawesome/brands/python
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Inicio: index.md
+  - Python:
+      - Python básico: python/python-basicos.md
+  - Frontend: frontend/index.md
+  - Backend: backend/index.md
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sebastianaguirre-lab
+      name: Sebastián Aguirre en GitHub
+    - icon: fontawesome/solid/globe
+      link: https://sebastianaguirre-lab.github.io/Portafolio/
+      name: Portafolio de Sebastián Aguirre
+  generator: false
+
+copyright: Hecho con Python, curiosidad y práctica constante.

@@ -1,0 +1,67 @@
+:root {
+  --brand-cyan: #4de2ff;
+  --brand-violet: #9b7cff;
+  --surface: #11131c;
+  --surface-raised: #171a26;
+  --line: rgba(255,255,255,.09);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b0d14;
+  --md-default-fg-color: #e9ecf5;
+  --md-primary-fg-color: #11131c;
+  --md-accent-fg-color: var(--brand-cyan);
+  --md-code-bg-color: #121520;
+  --md-typeset-a-color: #75e7fb;
+}
+
+body { background: radial-gradient(circle at 70% -20%, rgba(98,67,190,.16), transparent 35%), #0b0d14; }
+.md-header { border-bottom: 1px solid var(--line); box-shadow: none; }
+.md-tabs { background: rgba(17,19,28,.96); border-bottom: 1px solid var(--line); }
+.md-main__inner { margin-top: 1.4rem; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { font-weight: 750; letter-spacing: -.025em; }
+.md-typeset h1 { color: #fff; }
+.md-typeset h2 { border-bottom: 1px solid var(--line); padding-bottom: .45rem; }
+.md-typeset code { border: 1px solid rgba(117,231,251,.10); border-radius: .35rem; }
+.md-typeset .highlight { margin: 1.2em 0; }
+.md-typeset .highlight pre { border: 1px solid var(--line); border-radius: .7rem; box-shadow: 0 14px 35px rgba(0,0,0,.16); }
+.md-typeset table:not([class]) { border-radius: .6rem; overflow: hidden; border: 1px solid var(--line); }
+.table-scroll { overflow-x: auto; margin: 1em 0; }
+.table-scroll table { margin: 0 !important; min-width: 32rem; }
+
+.hero { padding: 5.5rem 0 4rem; max-width: 58rem; position: relative; }
+.hero::after { content: "</>"; position: absolute; right: 2%; top: 20%; font: 800 8rem/1 monospace; color: rgba(77,226,255,.045); transform: rotate(-6deg); pointer-events: none; }
+.hero__eyebrow { color: var(--brand-cyan); font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.md-typeset .hero h1 { margin: .65rem 0 1.2rem; font-size: clamp(3rem, 8vw, 5.8rem); line-height: .92; letter-spacing: -.065em; }
+.hero h1 span { background: linear-gradient(90deg,var(--brand-cyan),var(--brand-violet)); -webkit-background-clip: text; color: transparent; }
+.hero p { color: #aeb5c8; font-size: 1.15rem; max-width: 39rem; line-height: 1.7; }
+.hero__actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.8rem; }
+.md-typeset .md-button { border-radius: .55rem; padding: .7em 1.3em; }
+.md-typeset .md-button--primary { background: var(--brand-cyan); border-color: var(--brand-cyan); color: #071015; }
+.md-typeset .md-button--primary:hover { background: #fff; border-color: #fff; color: #071015; }
+
+.learning-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1rem 0 4rem; }
+.learning-card { display: block; min-height: 12rem; padding: 1.5rem; color: inherit !important; background: linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015)); border: 1px solid var(--line); border-radius: .85rem; transition: transform .2s,border-color .2s; }
+.learning-card--active:hover { transform: translateY(-4px); border-color: rgba(77,226,255,.55); }
+.learning-card__number { color: var(--brand-violet); font: 700 .72rem/1 monospace; letter-spacing: .1em; }
+.md-typeset .learning-card h2 { border: 0; margin: 1rem 0 .4rem; }
+.learning-card p { color: #9da5b8; min-height: 3.2rem; }
+.learning-card strong { color: var(--brand-cyan); font-size: .8rem; }
+.feature-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 1rem 0 3.5rem; }
+.feature-row > ul { display: contents; }
+.feature-row li { list-style: none; padding: 1.2rem; background: var(--surface); border-left: 2px solid var(--brand-violet); }
+.route { counter-reset: route; border-left: 1px solid rgba(77,226,255,.28); padding-left: 1.5rem; }
+.route li { margin-bottom: 1.2rem; padding-left: .4rem; }
+.home-footer { margin-top: 4rem; padding: 1.5rem 0; border-top: 1px solid var(--line); display: flex; gap: 1.3rem; align-items: center; flex-wrap: wrap; }
+.home-footer p { margin: 0 auto 0 0; color: #929aad; }
+.home-footer a { font-weight: 700; }
+
+@media (max-width: 700px) {
+  .hero { padding: 3.5rem 0 2.5rem; }
+  .hero::after { display: none; }
+  .learning-grid, .feature-row { grid-template-columns: 1fr; }
+  .learning-card { min-height: auto; }
+  .feature-row > ul { display: block; padding: 0; }
+  .feature-row li { margin-bottom: .75rem; }
+  .md-typeset .hero h1 { font-size: clamp(2.7rem,14vw,4.2rem); }
+}
