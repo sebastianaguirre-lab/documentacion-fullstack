@@ -38,7 +38,7 @@ nav:
       - Python básico: python/python-basicos.md
   - Herramientas:
       - Git y GitHub: herramientas/git-y-github.md
-  - Frontend: frontend/index.md
+  - Frontend: frontend/frontend.md
   - Backend: backend/index.md
 
 plugins:
