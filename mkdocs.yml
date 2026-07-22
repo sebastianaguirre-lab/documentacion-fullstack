@@ -36,6 +36,8 @@ nav:
   - Inicio: index.md
   - Python:
       - Python básico: python/python-basicos.md
+  - Herramientas:
+      - Git y GitHub: herramientas/git-y-github.md
   - Frontend: frontend/index.md
   - Backend: backend/index.md
 
