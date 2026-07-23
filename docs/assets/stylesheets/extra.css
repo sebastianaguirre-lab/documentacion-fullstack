@@ -47,6 +47,10 @@ body { background: radial-gradient(circle at 70% -20%, rgba(98,67,190,.16), tran
 .md-typeset .learning-card h2 { border: 0; margin: 1rem 0 .4rem; }
 .learning-card p { color: #9da5b8; min-height: 3.2rem; }
 .learning-card strong { color: var(--brand-cyan); font-size: .8rem; }
+.project-links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .9rem; }
+.project-links a { display: inline-flex; align-items: center; padding: .55rem .75rem; color: var(--brand-cyan) !important; background: rgba(77,226,255,.07); border: 1px solid rgba(77,226,255,.22); border-radius: .45rem; font-size: .72rem; font-weight: 750; line-height: 1.2; }
+.project-links a:hover { color: #071015 !important; background: var(--brand-cyan); border-color: var(--brand-cyan); }
+.learning-card--projects p { min-height: auto; }
 .feature-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 1rem 0 3.5rem; }
 .feature-row > ul { display: contents; }
 .feature-row li { list-style: none; padding: 1.2rem; background: var(--surface); border-left: 2px solid var(--brand-violet); }

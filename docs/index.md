@@ -23,12 +23,12 @@ hide:
   <strong>Explorar la guía →</strong>
 </a>
 
-<div class="learning-card">
+<a class="learning-card learning-card--active" href="frontend/frontend/">
   <span class="learning-card__number">02</span>
   <h2>Frontend</h2>
   <p>HTML, CSS, Bootstrap y JavaScript para construir interfaces claras y responsive.</p>
   <strong>Explorar la guía →</strong>
-</div>
+</a>
 
 <div class="learning-card">
   <span class="learning-card__number">03</span>
@@ -37,11 +37,14 @@ hide:
   <strong>Próximamente</strong>
 </div>
 
-<div class="learning-card">
+<div class="learning-card learning-card--projects">
   <span class="learning-card__number">04</span>
   <h2>Proyectos</h2>
   <p>Ejercicios integradores para convertir conceptos aislados en soluciones completas.</p>
-  <strong>En preparación</strong>
+  <div class="project-links">
+    <a href="https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/" target="_blank" rel="noopener">Fullstack interactivo ↗</a>
+    <a href="https://sebastianaguirre-lab.github.io/librerias-web/" target="_blank" rel="noopener">Librerías web ↗</a>
+  </div>
 </div>
 
 </div>
