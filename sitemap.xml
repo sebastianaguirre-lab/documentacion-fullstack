@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/backend/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/frontend/frontend/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/herramientas/borrador_instructivo_GitHub/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/herramientas/git-y-github/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/python/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/python/python-avanzados/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/python/python-basicos/</loc>
+         <lastmod>2026-07-24</lastmod>
+    </url>
+</urlset>
