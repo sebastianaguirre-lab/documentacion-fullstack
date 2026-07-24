@@ -35,7 +35,9 @@ theme:
 nav:
   - Inicio: index.md
   - Python:
+      - Índice: python/index.md
       - Python básico: python/python-basicos.md
+      - Python avanzado: python/python-avanzados.md
   - Herramientas:
       - Git y GitHub: herramientas/git-y-github.md
   - Frontend: frontend/frontend.md
