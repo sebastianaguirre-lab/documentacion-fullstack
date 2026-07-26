@@ -14,4 +14,4 @@ Fundamentos desde `print()`, variables y tipos de datos hasta modularización y 
 
 Contenido desde la sección 18: programación orientada a objetos.
 
-[Abrir Python avanzado →](python-avanzados.md){ .md-button }
+[Abrir Python avanzado →](python-avanzados.md){ .md-button .md-button--primary}
