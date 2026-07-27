@@ -295,3 +295,101 @@ resultado = NombreClase.método_estático(argumento)
 objeto.método_de_instancia(argumento)
 ```
 
+
+
+
+
+## 19. Constructores y encapsulamiento
+
+Una vez creada una clase, normalmente no se accede ni se modifican sus atributos directamente. Para controlar cómo se inicializa un objeto y cómo se leen o modifican sus datos, Python utiliza el **constructor** y las **propiedades** (`@property`), conocidas comúnmente como *getters* y *setters*.
+
+Una ventaja de `@property` es que permite utilizar un método **como si fuera un atributo**:
+
+```python
+print(persona.edad)
+```
+
+Aunque parece un atributo, internamente se está ejecutando un método, permitiendo validar datos sin cambiar la forma de utilizar la clase.
+
+### Constructor (`__init__`)
+
+El constructor se ejecuta automáticamente al crear un objeto y se utiliza para inicializar sus atributos.
+
+```python
+class Persona:
+
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+```
+
+- `self.nombre` y `self.edad` son atributos de instancia.
+- `nombre` y `edad` son parámetros del constructor.
+- `self.nombre = nombre` almacena el valor recibido dentro del objeto.
+
+También pueden utilizarse parámetros con valores por defecto.
+
+```python
+class Pelota:
+
+    def __init__(self, color, tamaño=20):
+        self.color = color
+        self.tamaño = tamaño
+```
+
+### Getter (`@property`)
+
+Permite leer un atributo mediante un método.
+
+```python
+class Persona:
+
+    def __init__(self):
+        self._edad = 20
+
+    @property
+    def edad(self):
+        return self._edad
+```
+
+Uso:
+
+```python
+print(persona.edad)
+```
+
+### Setter (`@edad.setter`)
+
+Permite modificar un atributo realizando validaciones previamente.
+
+```python
+class Persona:
+
+    def __init__(self):
+        self._edad = 20
+
+    @property
+    def edad(self):
+        return self._edad
+
+    @edad.setter
+    def edad(self, valor):
+        if valor >= 0:
+            self._edad = valor
+```
+
+Uso:
+
+```python
+persona.edad = 30
+```
+
+### Convención de nombres
+
+| Nombre | Significado |
+| --- | --- |
+| `atributo` | Público. |
+| `_atributo` | Uso interno (convención). |
+| `__atributo` | Name mangling (acceso más restringido). |
+
+Se utiliza `_atributo` para evitar conflictos con `@property` y señalar que el acceso recomendado es mediante la propiedad pública.
