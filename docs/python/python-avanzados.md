@@ -393,3 +393,51 @@ persona.edad = 30
 | `__atributo` | Name mangling (acceso más restringido). |
 
 Se utiliza `_atributo` para evitar conflictos con `@property` y señalar que el acceso recomendado es mediante la propiedad pública.
+
+## 20. Sobrecarga de operadores
+
+La sobrecarga de operadores permite definir cómo se comportan operadores como `<`, `>` o `==` al comparar objetos de una clase.
+
+Python llama automáticamente a un método especial según el operador utilizado:
+
+| Comparación | Operador | Método especial |
+| --- | --- | --- |
+| Menor que | `a < b` | `a.__lt__(b)` |
+| Menor o igual | `a <= b` | `a.__le__(b)` |
+| Igual | `a == b` | `a.__eq__(b)` |
+| Distinto | `a != b` | `a.__ne__(b)` |
+| Mayor o igual | `a >= b` | `a.__ge__(b)` |
+| Mayor que | `a > b` | `a.__gt__(b)` |
+
+Fuente: [documentación oficial de Python](https://docs.python.org/es/3/library/operator.html#mapping-operators-to-functions).
+
+### Ejemplo
+
+```python
+class Personaje:
+
+    def __init__(self, nombre, nivel=1):
+        self.nombre = nombre
+        self.nivel = nivel
+
+    def __lt__(self, otro):
+        return self.nivel < otro.nivel
+
+    def __gt__(self, otro):
+        return self.nivel > otro.nivel
+
+
+jugador = Personaje("Sebastián", 3)
+orco = Personaje("Orco", 5)
+
+print(jugador < orco)  # True
+print(jugador > orco)  # False
+```
+
+Al escribir `jugador < orco`, Python ejecuta:
+
+```python
+jugador.__lt__(orco)
+```
+
+La comparación retorna directamente `True` o `False`, por lo que no es necesario agregar un `if`.
