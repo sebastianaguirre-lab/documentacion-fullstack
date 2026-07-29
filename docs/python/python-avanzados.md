@@ -337,30 +337,14 @@ class Pelota:
         self.tamaño = tamaño
 ```
 
-### Getter (`@property`)
+### Getter y setter con `@property`
 
-Permite leer un atributo mediante un método.
+Una propiedad permite utilizar métodos como si fueran un atributo. El comportamiento depende de la operación realizada:
 
-```python
-class Persona:
-
-    def __init__(self):
-        self._edad = 20
-
-    @property
-    def edad(self):
-        return self._edad
-```
-
-Uso:
-
-```python
-print(persona.edad)
-```
-
-### Setter (`@edad.setter`)
-
-Permite modificar un atributo realizando validaciones previamente.
+| Operación | Código | Método ejecutado |
+| --- | --- | --- |
+| Leer la propiedad | `print(persona.edad)` | Getter |
+| Asignar un valor | `persona.edad = 30` | Setter |
 
 ```python
 class Persona:
@@ -368,21 +352,54 @@ class Persona:
     def __init__(self):
         self._edad = 20
 
+    # Getter: se ejecuta al leer persona.edad.
     @property
     def edad(self):
         return self._edad
 
+    # Setter: se ejecuta al asignar persona.edad = valor.
     @edad.setter
     def edad(self, valor):
         if valor >= 0:
             self._edad = valor
 ```
 
-Uso:
+### Asignar y después leer
+
+```python
+persona = Persona()
+
+persona.edad = 30       # Ejecuta el setter.
+print(persona.edad)     # Ejecuta el getter.
+```
+
+**Salida:**
+
+```text
+30
+```
+
+Al ejecutar:
 
 ```python
 persona.edad = 30
 ```
+
+Python llama automáticamente al setter y almacena el valor validado en `self._edad`. Después, al ejecutar:
+
+```python
+print(persona.edad)
+```
+
+Python llama automáticamente al getter y retorna el valor actualizado.
+
+Aunque ambos se llaman `edad`, cumplen funciones diferentes:
+
+- `@property` define qué ocurre al **leer**.
+- `@edad.setter` define qué ocurre al **asignar**.
+- `self._edad` conserva internamente el valor real.
+
+Es importante modificar `self._edad` dentro del setter. Si se utilizara `self.edad = valor`, el setter volvería a llamarse a sí mismo indefinidamente.
 
 ### Convención de nombres
 

@@ -10,7 +10,7 @@ hide:
   <p>Una guía práctica de programación y desarrollo web, organizada para consultar conceptos, probar ejemplos y avanzar paso a paso.</p>
   <div class="hero__actions">
     <a class="md-button md-button--primary" href="python/">Comenzar con Python →</a>
-    <a class="md-button" href="https://github.com/sebastianaguirre-lab">Ver GitHub</a>
+    <a class="md-button md-button--primary" href="https://github.com/sebastianaguirre-lab">Ver GitHub</a>
   </div>
 </section>
 
