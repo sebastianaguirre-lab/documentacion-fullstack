@@ -411,7 +411,104 @@ Es importante modificar `self._edad` dentro del setter. Si se utilizara `self.ed
 
 Se utiliza `_atributo` para evitar conflictos con `@property` y señalar que el acceso recomendado es mediante la propiedad pública.
 
-## 20. Sobrecarga de operadores
+### ¿Qué hace realmente `__atributo`?
+
+A diferencia de lenguajes como Java o C++, en Python `__atributo` **no hace un atributo completamente privado**. Lo que hace es aplicar **name mangling**, cambiando internamente el nombre del atributo para evitar accesos o modificaciones accidentales.
+
+```python
+class Persona:
+
+    def __init__(self):
+        self.__edad = 20
+```
+
+Internamente, Python almacena el atributo aproximadamente como:
+
+```python
+_Persona__edad
+```
+
+Por eso, escribir:
+
+```python
+persona.__edad = 30
+```
+
+**no modifica el atributo privado**, sino que crea un atributo nuevo llamado `__edad`.
+
+La filosofía de Python es:
+
+> **"Somos todos adultos responsables."**
+
+Python no intenta impedir que modifiques los datos internos; simplemente deja claro cuáles son atributos internos y cuál es la forma recomendada de acceder a ellos.
+
+### ¿Entonces cuál es la utilidad?
+
+El verdadero objetivo del encapsulamiento **no es impedir que un dato cambie**, sino **controlar cómo cambia**.
+
+La forma recomendada de modificar un atributo privado es mediante una propiedad (`@property`) o un método de la clase.
+
+```python
+persona.edad = 30
+```
+
+En este caso Python ejecuta el **setter**, donde pueden agregarse reglas antes de modificar el atributo privado.
+
+Un setter puede hacer mucho más que asignar un valor:
+
+```python
+# Validar un rango
+if valor >= 0:
+    self._edad = valor
+
+# Rechazar el cambio
+raise PermissionError("No permitido")
+
+# Ignorar el cambio
+pass
+
+# Registrar un cambio antes de asignar
+print("Edad modificada")
+self._edad = valor
+```
+
+El setter decide si el atributo cambia y bajo qué condiciones.
+
+
+## 20. Abstracción
+
+La abstracción consiste en definir **qué debe hacer un objeto**, sin indicar **cómo lo hace**.
+
+En Python esto se logra mediante clases y métodos abstractos.
+
+```python
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    @abstractmethod
+    def hablar(self):
+        pass
+```
+
+Una clase abstracta funciona como un **molde**. No puede instanciarse y obliga a las clases hijas a implementar los métodos abstractos.
+
+```python
+class Perro(Animal):
+
+    def hablar(self):
+        print("Guau")
+
+
+class Gato(Animal):
+
+    def hablar(self):
+        print("Miau")
+```
+
+La clase abstracta define **qué métodos deben existir**. Cada subclase decide **cómo implementarlos**.
+
+## 21. Sobrecarga de operadores
 
 La sobrecarga de operadores permite definir cómo se comportan operadores como `<`, `>` o `==` al comparar objetos de una clase.
 
