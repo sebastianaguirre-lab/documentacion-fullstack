@@ -130,6 +130,84 @@ git push -u origin master
 !!! note
     Usa `main` o `master` según el nombre real de la rama principal del repositorio. Puedes comprobarlo con `git branch`.
 
+## Cambiar de main a develop en el PC
+
+Usa este proceso cuando el repositorio ya está descargado en tu PC, estabas trabajando en `main` y creaste una nueva rama `develop` en GitHub.
+
+### 1. Revisar el estado actual
+
+Antes de cambiar de rama:
+
+```bash
+git status
+```
+
+Confirma que no tengas cambios pendientes. Si los tienes, crea un commit antes de continuar o guarda los cambios temporalmente. No cambies de rama sin revisar, porque Git podría impedir el cambio o trasladar las modificaciones a la otra rama.
+
+### 2. Descargar la información de las ramas remotas
+
+```bash
+git fetch origin
+```
+
+`git fetch` actualiza la información del repositorio remoto sin modificar los archivos en los que estás trabajando.
+
+### 3. Cambiar a develop
+
+Primero intenta:
+
+```bash
+git switch develop
+```
+
+Si `develop` existe en GitHub pero todavía no existe localmente, créala y vincúlala con la rama remota:
+
+```bash
+git switch --track origin/develop
+```
+
+### 4. Comprobar la rama activa
+
+```bash
+git branch
+git status
+```
+
+La rama actual aparece marcada con un asterisco:
+
+```text
+* develop
+  main
+```
+
+`git status` debería indicar que la rama local está vinculada con `origin/develop`.
+
+### 5. Trabajar y subir cambios a develop
+
+```bash
+git status
+git add archivo-1 archivo-2
+git commit -m "mensaje claro del cambio"
+git push
+```
+
+Si es la primera vez que subes esa rama y todavía no quedó vinculada:
+
+```bash
+git push -u origin develop
+```
+
+Después de usar `-u` una vez, normalmente bastará con ejecutar `git push`.
+
+### 6. Volver a main
+
+```bash
+git switch main
+```
+
+!!! note "Develop para experimentar"
+    Para desarrollar y probar cambios sin afectar la versión estable del sitio, trabaja en `develop`. Conserva `main` como la rama estable y pasa los cambios a ella solo cuando la nueva versión esté revisada.
+
 ## Flujo recomendado para ARCA
 
 ### 1. Partir desde develop actualizado
