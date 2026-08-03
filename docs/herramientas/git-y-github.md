@@ -10,6 +10,7 @@ Guía corta para trabajar con Git, GitHub y Pull Requests. Está pensada como un
 - [Actualizar el repositorio en tu PC](#actualizar-el-repositorio-en-tu-pc)
 - [Clonar un repositorio de GitHub](#clonar-un-repositorio-de-github-a-tu-pc)
 - [Conectar un repositorio local a GitHub](#conectar-un-repositorio-local-a-github)
+- [Cambiar de main a develop en el PC](#cambiar-de-main-a-develop-en-el-pc)
 - [Flujo recomendado para ARCA](#flujo-recomendado-para-arca)
 - [Caso actual: auto-import Caribe](#caso-actual-auto-import-caribe)
 - [Comandos útiles](#comandos-utiles)
