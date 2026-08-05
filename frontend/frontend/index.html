@@ -1,0 +1,1630 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía práctica de programación y desarrollo web.">
+      
+      
+        <meta name="author" content="Sebastián Aguirre">
+      
+      
+        <link rel="canonical" href="https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/frontend/frontend/">
+      
+      
+        <link rel="prev" href="../../herramientas/git-y-github/">
+      
+      
+        <link rel="next" href="../../backend/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Frontend - Fullstack Python Interactivo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frontend" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Fullstack Python Interactivo" class="md-header__button md-logo" aria-label="Fullstack Python Interactivo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fullstack Python Interactivo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Frontend
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sebastianaguirre-lab/fullstack-python-interactivo" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sebastianaguirre-lab/fullstack-python-interactivo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python/" class="md-tabs__link">
+          
+  
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../herramientas/git-y-github/" class="md-tabs__link">
+          
+  
+  
+  Herramientas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../backend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Fullstack Python Interactivo" class="md-nav__button md-logo" aria-label="Fullstack Python Interactivo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+
+    </a>
+    Fullstack Python Interactivo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sebastianaguirre-lab/fullstack-python-interactivo" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sebastianaguirre-lab/fullstack-python-interactivo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Índice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python-basicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python básico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/python-avanzados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python avanzado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Herramientas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Herramientas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../herramientas/git-y-github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git y GitHub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-semantico" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML semántico
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores-y-prioridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores y prioridad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-de-cajas-y-unidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelo de cajas y unidades
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grilla-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grilla responsive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componentes-con-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes con JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-entrada-y-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables, entrada y conversión
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-y-modificar-elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buscar y modificar elementos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-aplicado-promedio-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flujo aplicado: promedio de notas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      jQuery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="jQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-y-metodos-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos y métodos utilizados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Font Awesome
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Fonts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proyecto interactivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código fuente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#librerias-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Librerías web
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contenidos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-semantico" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML semántico
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores-y-prioridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores y prioridad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-de-cajas-y-unidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelo de cajas y unidades
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bootstrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bootstrap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grilla-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grilla responsive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componentes-con-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes con JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables-entrada-y-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables, entrada y conversión
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-y-modificar-elementos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buscar y modificar elementos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flujo-aplicado-promedio-de-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flujo aplicado: promedio de notas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jquery" class="md-nav__link">
+    <span class="md-ellipsis">
+      jQuery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="jQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selectores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-y-metodos-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos y métodos utilizados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-awesome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Font Awesome
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Fonts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyecto-interactivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proyecto interactivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-fuente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Código fuente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#librerias-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Librerías web
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h1>
+<p>Esta página reúne los conceptos y recursos usados en la <strong>Plantilla de Estudio Frontend</strong>. Funciona como una referencia rápida para recordar cómo se conectan HTML, CSS, Bootstrap, JavaScript, jQuery, Font Awesome y Google Fonts dentro de un proyecto real.</p>
+<h2 id="contenidos">Contenidos<a class="headerlink" href="#contenidos" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#introduccion">Introducción</a></li>
+<li><a href="#html">HTML</a></li>
+<li><a href="#css">CSS</a></li>
+<li><a href="#bootstrap">Bootstrap</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#jquery">jQuery</a></li>
+<li><a href="#font-awesome">Font Awesome</a></li>
+<li><a href="#google-fonts">Google Fonts</a></li>
+<li><a href="#proyecto-interactivo">Proyecto interactivo</a></li>
+<li><a href="#codigo-fuente">Código fuente</a></li>
+</ul>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
+<p>El frontend es la parte de una aplicación con la que interactúa la persona usuaria. En este proyecto, cada tecnología cumple una función concreta:</p>
+<table>
+<thead>
+<tr>
+<th>Tecnología</th>
+<th>Función dentro del proyecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Define la estructura y el contenido.</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Controla colores, tamaños, espacios, bordes y adaptación visual.</td>
+</tr>
+<tr>
+<td>Bootstrap</td>
+<td>Aporta una grilla responsive y componentes preparados.</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Agrega lógica e interacción en la página.</td>
+</tr>
+<tr>
+<td>jQuery</td>
+<td>Simplifica la selección de elementos y el manejo de eventos.</td>
+</tr>
+<tr>
+<td>Font Awesome</td>
+<td>Incorpora iconos mediante clases CSS.</td>
+</tr>
+<tr>
+<td>Google Fonts</td>
+<td>Permite cargar tipografías web como Poppins.</td>
+</tr>
+</tbody>
+</table>
+<p>El archivo HTML conecta todos los recursos desde su <code>&lt;head&gt;</code> y al final del <code>&lt;body&gt;</code>:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cm">&lt;!-- CSS externo y CSS propio --&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;assets/css/style.css&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cm">&lt;!-- Bibliotecas y JavaScript propio --&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;assets/js/script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Orden de carga</p>
+<p><code>script.js</code> se carga después de jQuery y Bootstrap porque utiliza funciones de ambas bibliotecas. Si se cambia el orden, <code>$()</code> o <code>bootstrap.Tooltip</code> podrían no estar disponibles.</p>
+</div>
+<h2 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<p>HTML crea la estructura del contenido. La plantilla parte con la estructura básica de HTML5 e incluye metadatos para caracteres especiales y diseño responsive:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Plantilla de Estudio Fullstack Python - Frontend<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="cm">&lt;!-- Contenido de la página --&gt;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="html-semantico">HTML semántico<a class="headerlink" href="#html-semantico" title="Permanent link">&para;</a></h3>
+<p>Las etiquetas semánticas describen la función de cada bloque y facilitan la lectura del documento:</p>
+<table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;header&gt;</code></td>
+<td>Encabezado principal.</td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Navegación y enlaces internos.</td>
+</tr>
+<tr>
+<td><code>&lt;main&gt;</code></td>
+<td>Contenido principal de la página.</td>
+</tr>
+<tr>
+<td><code>&lt;section&gt;</code></td>
+<td>Agrupa contenido relacionado.</td>
+</tr>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td>Representa contenido independiente.</td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>Pie de página o cierre de una sección.</td>
+</tr>
+</tbody>
+</table>
+<p>La plantilla también contiene listas, enlaces internos y externos, imágenes, tablas, botones y un formulario con campos de texto, correo, selección, área de texto y casilla de verificación.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;formulario-estudio&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span><span class="p">&gt;</span>Nombre<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>Enviar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El atributo <code>for</code> de un <code>&lt;label&gt;</code> debe coincidir con el <code>id</code> de su campo. Esto mejora la accesibilidad y permite activar el campo al seleccionar su etiqueta.</p>
+</div>
+<h2 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h2>
+<p>CSS modifica la apariencia de la página: colores, márgenes, <em>padding</em>, bordes, tipografía y estados como <code>hover</code>. El proyecto define variables reutilizables en <code>:root</code>:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nv">--color-principal</span><span class="p">:</span><span class="w"> </span><span class="mh">#1f6feb</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nv">--color-secundario</span><span class="p">:</span><span class="w"> </span><span class="mh">#198754</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nv">--color-fondo</span><span class="p">:</span><span class="w"> </span><span class="mh">#f6f8fa</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nv">--color-texto</span><span class="p">:</span><span class="w"> </span><span class="mh">#24292f</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nv">--borde-suave</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#d0d7de</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="selectores-y-prioridad">Selectores y prioridad<a class="headerlink" href="#selectores-y-prioridad" title="Permanent link">&para;</a></h3>
+<p>Se utilizan selectores de etiqueta, clase e identificador:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">/* Etiqueta */</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-fondo</span><span class="p">);</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c">/* Clase */</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">.</span><span class="nc">caja-demo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">}</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c">/* ID */</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">#</span><span class="nn">cajaEspecial</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="k">border-left</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-secundario</span><span class="p">);</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Cuando varias reglas afectan al mismo elemento, un selector por ID tiene mayor prioridad que una clase, y una clase tiene mayor prioridad que una etiqueta. Si dos reglas tienen la misma prioridad, se aplica la última escrita.</p>
+<h3 id="modelo-de-cajas-y-unidades">Modelo de cajas y unidades<a class="headerlink" href="#modelo-de-cajas-y-unidades" title="Permanent link">&para;</a></h3>
+<p>Cada elemento se puede entender mediante cuatro capas: <strong>contenido</strong>, <strong>padding</strong>, <strong>borde</strong> y <strong>margin</strong>. En la plantilla se combinan unidades fijas y relativas:</p>
+<table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>px</code></td>
+<td>Medida fija.</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Porcentaje del contenedor.</td>
+</tr>
+<tr>
+<td><code>vw</code> / <code>vh</code></td>
+<td>Porcentaje del ancho o alto de la ventana.</td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>Relativa al tamaño base del documento.</td>
+</tr>
+<tr>
+<td><code>em</code></td>
+<td>Relativa al tamaño del elemento padre.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="media-query">Media query<a class="headerlink" href="#media-query" title="Permanent link">&para;</a></h3>
+<p>La media query adapta títulos y espacios en pantallas pequeñas:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">576px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="p">.</span><span class="nc">encabezado</span><span class="w"> </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.45</span><span class="kt">rem</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">        </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="p">;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p">.</span><span class="nc">caja-demo</span><span class="o">,</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="p">.</span><span class="nc">panel-js</span><span class="o">,</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="p">.</span><span class="nc">panel-estudio</span><span class="o">,</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="p">.</span><span class="nc">formulario-estudio</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="bootstrap">Bootstrap<a class="headerlink" href="#bootstrap" title="Permanent link">&para;</a></h2>
+<p>Bootstrap entrega clases preparadas para construir layouts responsive y componentes visuales. La plantilla usa navbar, grilla, cards, botones, tablas, formulario, tooltip y carousel.</p>
+<h3 id="grilla-responsive">Grilla responsive<a class="headerlink" href="#grilla-responsive" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-12 col-md-6 col-lg-4&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card h-100&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>            <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-title&quot;</span><span class="p">&gt;</span>Grid<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><code>col-12 col-md-6 col-lg-4</code> significa:</p>
+<ul>
+<li>ancho completo en celular;</li>
+<li>mitad del ancho desde pantallas medianas;</li>
+<li>un tercio del ancho en pantallas grandes.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th style="text-align: right;">Ancho mínimo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sm</code></td>
+<td style="text-align: right;">576 px</td>
+</tr>
+<tr>
+<td><code>md</code></td>
+<td style="text-align: right;">768 px</td>
+</tr>
+<tr>
+<td><code>lg</code></td>
+<td style="text-align: right;">992 px</td>
+</tr>
+<tr>
+<td><code>xl</code></td>
+<td style="text-align: right;">1200 px</td>
+</tr>
+<tr>
+<td><code>xxl</code></td>
+<td style="text-align: right;">1400 px</td>
+</tr>
+</tbody>
+</table>
+<h3 id="componentes-con-javascript">Componentes con JavaScript<a class="headerlink" href="#componentes-con-javascript" title="Permanent link">&para;</a></h3>
+<p>Algunos componentes requieren <code>bootstrap.bundle.min.js</code>. Por ejemplo, los tooltips se activan desde JavaScript:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">tooltipTriggerList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;[data-bs-toggle=&quot;tooltip&quot;]&#39;</span><span class="p">);</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">tooltipTriggerList</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="ow">new</span><span class="w"> </span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">(</span><span class="nx">tooltipTriggerList</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Las clases de Bootstrap resuelven buena parte del estilo, pero <code>style.css</code> sigue siendo útil para la identidad visual y los ajustes específicos del proyecto.</p>
+</div>
+<h2 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
+<p>JavaScript conecta la interfaz con la lógica. La plantilla trabaja con variables, entrada de datos, conversión, operaciones matemáticas, búsqueda de elementos y modificación del HTML.</p>
+<h3 id="variables-entrada-y-conversion">Variables, entrada y conversión<a class="headerlink" href="#variables-entrada-y-conversion" title="Permanent link">&para;</a></h3>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Ingrese su nombre&quot;</span><span class="p">);</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nota</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Ingrese una nota&quot;</span><span class="p">));</span>
+</span></code></pre></div>
+<p><code>prompt()</code> devuelve texto. <code>parseFloat()</code> convierte ese texto en un número decimal para poder realizar cálculos.</p>
+<h3 id="buscar-y-modificar-elementos">Buscar y modificar elementos<a class="headerlink" href="#buscar-y-modificar-elementos" title="Permanent link">&para;</a></h3>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">celda</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;resultadoDemo&quot;</span><span class="p">);</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nx">celda</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Contenido cambiado con innerHTML&quot;</span><span class="p">;</span>
+</span></code></pre></div>
+<p><code>document.getElementById()</code> busca un elemento mediante su <code>id</code>. Después, <code>innerHTML</code> permite cambiar su contenido visible.</p>
+<h3 id="flujo-aplicado-promedio-de-notas">Flujo aplicado: promedio de notas<a class="headerlink" href="#flujo-aplicado-promedio-de-notas" title="Permanent link">&para;</a></h3>
+<p>El ejercicio completo sigue estos pasos:</p>
+<ol>
+<li>Pedir el nombre y tres notas con <code>prompt()</code>.</li>
+<li>Guardar los datos en variables con <code>let</code>.</li>
+<li>Convertir las notas con <code>parseFloat()</code>.</li>
+<li>Calcular el promedio.</li>
+<li>Buscar las celdas de la tabla con <code>getElementById()</code>.</li>
+<li>Mostrar los resultados con <code>innerHTML</code>.</li>
+</ol>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">promedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">n2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">n3</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kd">let</span><span class="w"> </span><span class="nx">celdaPromedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;promedioFinal&quot;</span><span class="p">);</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nx">celdaPromedio</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">promedio</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Validación pendiente</p>
+<p>El ejemplo está centrado en el flujo entre JavaScript y HTML. En un proyecto posterior conviene validar entradas vacías o valores que no sean números antes de calcular.</p>
+</div>
+<h2 id="jquery">jQuery<a class="headerlink" href="#jquery" title="Permanent link">&para;</a></h2>
+<p>jQuery permite seleccionar elementos y reaccionar a eventos con una sintaxis breve. El código espera que el documento termine de cargar antes de registrar los eventos:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="c1">// Eventos y acciones de la página</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">});</span>
+</span></code></pre></div>
+<h3 id="selectores">Selectores<a class="headerlink" href="#selectores" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Por ID</td>
+<td><code>$("#textoPorId")</code></td>
+</tr>
+<tr>
+<td>Por clase</td>
+<td><code>$(".textoPorClase")</code></td>
+</tr>
+<tr>
+<td>Por etiqueta</td>
+<td><code>$("p")</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventos-y-metodos-utilizados">Eventos y métodos utilizados<a class="headerlink" href="#eventos-y-metodos-utilizados" title="Permanent link">&para;</a></h3>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#botonToggle&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#textoToggle&quot;</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">});</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.boton-color&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#cajaEspecial&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;background-color&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#e7f1ff&quot;</span><span class="p">);</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">});</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#botonHtml&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.texto-demo&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&lt;strong&gt;El contenido cambió usando html().&lt;/strong&gt;&quot;</span><span class="p">);</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>La plantilla incluye eventos <code>click</code>, <code>dblclick</code>, <code>hover</code> y <code>submit</code>, junto con los métodos <code>toggle()</code>, <code>css()</code>, <code>html()</code>, <code>hide()</code> y <code>show()</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>En el evento <code>submit</code>, <code>event.preventDefault()</code> evita que el formulario recargue la página mientras se demuestra su funcionamiento.</p>
+</div>
+<h2 id="font-awesome">Font Awesome<a class="headerlink" href="#font-awesome" title="Permanent link">&para;</a></h2>
+<p>Font Awesome incorpora iconos mediante clases. Primero se carga su hoja de estilos:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Después se agrega el icono con una etiqueta <code>&lt;i&gt;</code>:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-code&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-calculator&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-solid fa-paper-plane&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Las clases <code>fa-solid</code> y <code>fa-code</code>, por ejemplo, indican el estilo y el icono que se mostrará.</p>
+<h2 id="google-fonts">Google Fonts<a class="headerlink" href="#google-fonts" title="Permanent link">&para;</a></h2>
+<p>La plantilla usa <strong>Poppins</strong>. En el <code>&lt;head&gt;</code> se realizan conexiones anticipadas y se carga la familia tipográfica:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;preconnect&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;preconnect&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.gstatic.com&quot;</span> <span class="na">crossorigin</span><span class="p">&gt;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Luego se aplica desde CSS, dejando fuentes alternativas por si el recurso externo no está disponible:</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Poppins&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="proyecto-interactivo">Proyecto interactivo<a class="headerlink" href="#proyecto-interactivo" title="Permanent link">&para;</a></h2>
+<p>La versión publicada permite probar la navegación responsive, los botones, el tooltip, el carousel, los eventos de jQuery y el cálculo de promedio.</p>
+<p><a class="md-button md-button--primary" href="https://sebastianaguirre-lab.github.io/fullstack-python-interactivo/" rel="noopener" target="_blank">Abrir proyecto interactivo ↗</a></p>
+<h2 id="codigo-fuente">Código fuente<a class="headerlink" href="#codigo-fuente" title="Permanent link">&para;</a></h2>
+<p>Los tres archivos originales se incluyen completos para consulta y reutilización:</p>
+<ul>
+<li><a href="../codigo/">:material-language-html5: <code>index.html</code></a> — estructura, contenido y conexión de dependencias.</li>
+<li><a href="../codigo/style.css">:material-language-css3: <code>style.css</code></a> — variables, selectores, componentes y diseño responsive.</li>
+<li><a href="../codigo/script.js">:material-language-javascript: <code>script.js</code></a> — eventos, jQuery, Bootstrap JS y ejercicio de notas.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>codigo/
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>├── index.html
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>├── style.css
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>└── script.js
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Cómo ejecutar el proyecto</p>
+<p>Descarga los tres archivos y conserva las rutas indicadas en el HTML: <code>assets/css/style.css</code> y <code>assets/js/script.js</code>. También puedes abrir el <a href="../codigo/"><code>index.html</code></a> incluido en esta documentación para consultar el código completo.</p>
+</div>
+<h2 id="librerias-web">Librerías web<a class="headerlink" href="#librerias-web" title="Permanent link">&para;</a></h2>
+<p>Las librerías web complementan y facilitan la construcción de frontend</p>
+<p><a class="md-button md-button--primary" href="https://sebastianaguirre-lab.github.io/librerias-web/" rel="noopener" target="_blank">Abrir librerías web ↗</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Hecho con Python, curiosidad y práctica constante.
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/sebastianaguirre-lab" target="_blank" rel="noopener" title="Sebastián Aguirre en GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://sebastianaguirre-lab.github.io/Portafolio/" target="_blank" rel="noopener" title="Portafolio de Sebastián Aguirre" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../assets/javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

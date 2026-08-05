@@ -1,0 +1,160 @@
+/* Variables CSS simples */
+:root {
+    --color-principal: #1f6feb;
+    --color-secundario: #198754;
+    --color-fondo: #f6f8fa;
+    --color-texto: #24292f;
+    --borde-suave: 1px solid #d0d7de;
+}
+
+/* Selector por etiqueta */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Selector por etiqueta */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/* Franja con ejemplo de container-fluid */
+.franja {
+    background-color: #e7f1ff;
+    border-bottom: var(--borde-suave);
+}
+
+/* Estilo para titulos de seccion */
+.titulo-seccion {
+    border-left: 6px solid var(--color-principal);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* Ejemplo de imagen con borde */
+.imagen-ejemplo {
+    border: 4px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ejemplo de selector por clase */
+.caja-demo {
+    background-color: white;
+    border: var(--borde-suave);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 24px;
+}
+
+/* Ejemplo de selector por id */
+#cajaEspecial {
+    border-left: 6px solid var(--color-secundario);
+}
+
+/* Ejemplo de hover */
+.boton-color:hover {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/* Paneles simples para ejemplos de JavaScript */
+.panel-js {
+    background-color: white;
+    border: var(--borde-suave);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+/* Panel educativo reutilizable */
+.panel-estudio {
+    background-color: white;
+    border: var(--borde-suave);
+    border-radius: 8px;
+    height: 100%;
+    padding: 24px;
+}
+
+/* Bloques de codigo para estudiar sintaxis */
+pre {
+    background-color: #212529;
+    border-radius: 8px;
+    color: #f8f9fa;
+    padding: 16px;
+    white-space: pre-wrap;
+}
+
+/* Explicacion visual de columnas Bootstrap */
+.breakpoint-demo {
+    background-color: #e7f1ff;
+    border: 2px solid var(--color-principal);
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 18px;
+}
+
+/* Ejemplo visual del modelo de cajas */
+.modelo-caja {
+    font-weight: 700;
+    text-align: center;
+}
+
+.caja-margin {
+    background-color: #fff3cd;
+    padding: 16px;
+}
+
+.caja-border {
+    background-color: #f8d7da;
+    border: 4px solid #dc3545;
+    padding: 16px;
+}
+
+.caja-padding {
+    background-color: #d1e7dd;
+    padding: 16px;
+}
+
+.caja-content {
+    background-color: #cff4fc;
+    border: 2px solid #0dcaf0;
+    padding: 16px;
+}
+
+/* Formulario con borde y padding */
+.formulario-estudio {
+    background-color: white;
+    border: var(--borde-suave);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #212529;
+    color: white;
+}
+
+/* Ejemplo de media query */
+@media (max-width: 576px) {
+    .encabezado h1 {
+        font-size: 1.45rem;
+        line-height: 1.25;
+    }
+
+    .caja-demo,
+    .panel-js,
+    .panel-estudio,
+    .formulario-estudio {
+        padding: 16px;
+    }
+}
